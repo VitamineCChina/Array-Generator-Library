@@ -23,7 +23,7 @@ The library includes the following functionalities:
 This library is distributed under the MIT License. See the `LICENSE` file for more details.
 
 ## Getting Started
-To use the `array_generator` library, simply include the `array_generator.hpp` header file in your project. No additional dependencies are required.
+To use the `array_generator` library, simply include the `array_generator.h` header file in your project. No additional dependencies are required.
 
 ### Example Usage
 ```cpp
