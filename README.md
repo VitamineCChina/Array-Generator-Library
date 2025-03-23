@@ -32,8 +32,8 @@ To use the `array_generator` library, simply include the `array_generator.hpp` h
 
 int main() {
     auto numbers = array_generator::range(1, 10);
-    auto even_numbers = array_generator::filter(numbers, [](int x) { return x % 2 == 0; });
-    auto squared_numbers = array_generator::map(even_numbers, [](int x) { return x * x; });
+    auto even_numbers = array_generator::filter([](int x) { return x % 2 == 0; }, numbers);
+    auto squared_numbers = array_generator::map([](int x) { return x * x; }, even_numbers);
 
     for (const auto& num : squared_numbers) {
         std::cout << num << " ";
